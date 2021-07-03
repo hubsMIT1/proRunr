@@ -1,8 +1,8 @@
 var score = 0;
 var highscore = 0;
 //var highscore = localStorage.getItem("myscore"); 
-var audio1 = new Audio('./audio1.wav')
-var over1 = new Audio('./over.wav')
+var audio1 = new Audio('/proRunr/audio1.wav')
+var over1 = new Audio('/proRunr/over.wav')
 
 
 
