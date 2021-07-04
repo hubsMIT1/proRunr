@@ -205,16 +205,19 @@ myMoveHandler(e);
 */
 /*if("touchstart",touchdevice)*/
 else{
-up.addEventListener('click',() =>  {
+if(by==328){
+window.addEventListener('click',() =>  {
 
 //box = document.querySelector('.box1');
 box1.style.top = 208+'px'
 box.classList.add('doUp');
 box1.style.transform = 'rotate(180deg)';
 });
+ }
 //getscore(score);
 //setTimeout(() => {
-down.addEventListener('click',() =>{
+ else if(by==208) {
+window.addEventListener('click',() =>{
 //console.log("ram");
 
 //box = document.querySelector('box');
@@ -224,6 +227,7 @@ box.classList.add("doDown");
 box1.style.top = (328)+'px';
 box1.style.transform = 'rotate(0deg)';
 });
+ }
 
 //var up1 = document.querySelector('.up1');
 //var down1 = document.querySelector('.down1');
