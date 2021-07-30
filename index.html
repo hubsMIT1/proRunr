@@ -5,57 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Task2 </title>
-   <link rel="stylesheet" href="/proRunr/styles2.css">
+    <link rel="stylesheet" href="/proRunr/styles2.css">
+    <title>Pro Runr</title>
+
+
 
 </head>
 
-<body>
-<div class="scr"> 
-
-<h2> Score:Score<h2> 
-<span class="high"> / Highscore </span>
-</div>
-
-<div class = "container"> 
+<body class="bg1">
 
 
-<div class = 'ceiling ceiling1'>
-  
-<div class="hole1 moving1"></div>
-</div>
-<div id="s1" class = "bg">
-<div class="box box1"></div>
+    <button onclick="start();" class="start"> PLAY </button>
+    <button class="up1">&uparrow;</button>
+    <button class="down1">&downarrow;</button>
+    <center>
+        <div class="end" id="end">
+            <div class="ovr">
+                <div class="over">GAME OVER</div>
+            </div>
+            <div class="btnS">
 
-<center>
-<div class= "btnS"> 
-<br>
-<div class="end1"> Your score: 0
-</div><br>
-<div class="highS"> High Score:  </div>
-<br>
-<button onclick="window.location.reload();" class="btn">Restart</button>
-<br>
-<br>
-</center>
+                <span class="lvl1"> Level : 1234</span> &emsp13; <span class="lvl2"> Max Level : 1234</span>
+                <br>
+                <br>
+                <span class="bonus">Bonus Points : 1234</span>
+                <br>
+                <br>
+                <div class="score1"> Your score: 0
+                </div><br>
+                <div class="highS"> High Score: </div>
+                <br>
+                <button onclick="window.location.reload();" class="btn">Restart</button>
+                <br>
+                <br>
+            </div>
+        </div>
 
-</div>
-
-
-</div>
-<div class = 'ground ground1'> 
-<div class="hole2 moving2">
-</div>
-</div>
-
-
-<button class="up1">&uparrow;</button>
-<button class="down1">&downarrow;</button>
-
-</div>
-<script src= "/proRunr/main2.js"> </script>
+    </center>
 
 
+    <script src="/proRunr/main2.js">
+    </script>
 </body>
 
 </html>
