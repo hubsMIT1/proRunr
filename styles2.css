@@ -1,250 +1,170 @@
-
-*{
-margin: 0;
-
-} 
-body {
-overflow: hidden;
-/*position: relative;*/
-}
-.container {
-/*background-color: yellow;
-/*border: 2px solid black;*
-width:130%;*/
-/*
-position: absolute;
-top: 20px;
-height:700px;
-
-/*position: absolute; */
-/*overflow:hidden;*/
-}
-.bg{
-background: gray; 
-width: 130%;
-height: 180px;
-}
-
-
-.ceiling {
-background: #121101;                
-width:130%;
-height: 180px;
-overflow:hidden;
-
-}
-
-.ground{
-background: #121101; 
-width: 130%; 
-height: 180px;
-
-/*
-position: absolute;
-overflow: hidden;
-top:500px;*/
-}
-.box{
-
-/*width:100px; 
-height:100px;*/
-/*position: absolute;
-top:440px;
-left: 30px;*/
-}
-
-.hole1{
-
-background: gray;
-width: 50px;
-height: 180px;
-overflow: hidden;
-left: 30px;
-/*
-animation: hole1 2s linear infinite;*/
-
-}
-
-.hole2{
-background:gray;
-width:50px;
-height:180px;
-/*
-position: absolute;
-/*bottom:0px;
-overflow:hidden;
-top:500px;
-left: 30px;
-*/
-animation: hole2 3s linear infinite;
-}
-
-.box{
-
-position: absolute;
-top:328px;/*148px*/
-width: 0;
-height: 0;
-left:25px;
-/*animation: box 5s linear infinte;*/
-border-left: 30px solid transparent;
-border-right: 30px solid transparent;
-border-bottom: 60px solid blue;
-}
-:root {
---animation-time: 4s; 
-} 
-:root{
---animation-time2: 3s; 
-}
-
-.moving1{
-position: relative;
-animation: hol1  var(--animation-time)  linear infinite; 
-}
-.moving2 {
-
-position: relative;
-animation: hol2 var(--animation-time2) linear infinite;
-}
-
-
-@keyframes hol1{
-0% {
-left: 110%;
-overflow: hidden;
-snack: 0s;
-
-}
-100% {
-left: -50px;
-}
-}
-@keyframes hol2{
-0% {
-left: 95%;
-overflow:hidden;
-snack: 0s;
-}
-100% {
-left: -50px;
-}
-}
-/*
-.doUp{
-/* animation: up 1s linear;
- bottom:360px;
-}
-.doDown{
-bottom: 200px;
-}
-*/
-.btnS {
-text-align:center;
-background: white;
-position: relative;
-/*
-top: 200px;
-left: 70px;*/
-float: center;
-
-width: 60%;
-/*height: 250px;*/
-border: 1px solid white;
-
-box-shadow:20px 20px 40px black;
-border-radius: 10px;
-
-visibility: hidden;
-}
-
-.btn{
-
-background-size: cover; 
-font-size: 70px;
-color: lime;
-
-background: black;
-position: relative;
-
-
-
-visibility:hidden;
-border: 10px solid black;
-border-radius: 20px;
-text-align: center;*/
-box-shadow:10px 10px 30px #000000;
-
-}
-.btn:hover {
-background: lime;
-border-radius: 5px;; 
-}
-/*
-@keyframes up{
-/* bottom: 200px;*/
-
-
-/*bottom: 300px;*/
-/*
-h3{
-position: absolute;
-right: 30px;
-font-size: 25px;
-flex-dirextion: column;
-padding-right: 
-border: 2px solid black;
-color: lime;
-background-color: 0;
-
-height: 
-border-radius: 10px;
-}*/
-.scr {
-display: flex;
-flex-dirextion: row;
-column-gap: 500px;
-color:blue;
-float:right;
-}
-h2,.high {
-color: black;
-font-family: fantasy;
-}
-.end1,.highS{
- font-size: 30px; 
- color : black;
- background: bk;
- border: 0px solid black;
-/* display:flex;
- flex-direction: row;
- 
- position:relative;
-word-gap: 50px;
-position:relative;
- left: 10px;
-/* width: 400px; 
- height: 100px;
-float:left;
-*/
-}
-.up1{
-
-font-size: 50px;
-position:relative;
-left: 100px;
-width:100px;
-background:lime;
-
-}
-
-
-.down1 {
-
-position:relative;
-font-size: 50px;
-left: 110px;
-width:100px;
-background:lime;
-
-}
+ canvas {
+           
+            margin: 0%;
+            background: gray;
+            
+            width: 100%;
+            height: 100%;
+            position: relative;
+           
+        }
+        
+        .anim {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #F17C58, #E94584, #24AADB, #27DBB1, #FF3706, red, orange, green, blue, indigo, violet);
+            background-size: 600% 100%;
+            animation: gradient1 4s linear infinite;
+            background-repeat: no-repeat;
+        }
+        
+        @keyframes gradient1 {
+            0% {
+                background-position: 0%
+            }
+            100% {
+                background-position: 100%
+            }
+        }
+        
+        .btnS {
+            background: rgba(255, 255, 255, 0.5);
+            position: absolute;
+            float: center;
+            box-shadow: 20px 20px 40px black;
+            border-radius: 10px;
+            /* visibility: hidden; */
+        }
+        
+        .btn {
+            color: lime;
+            background: black;
+            border: 10px solid black;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 10px 10px 30px #000000;
+        }
+        
+        .btn:hover {
+            background: lime;
+            border-radius: 5px;
+            ;
+        }
+        
+        .scr {
+            text-align: left;
+            font-size: 20px;
+            font-family: fantasy;
+        }
+        
+        .sc {
+            display: inline-block;
+            color: blue;
+            /* float: right; */
+        }
+        
+        .high {
+            color: blue;
+            /* font-family: fantasy; */
+        }
+        
+        .score1,
+        .highS {
+            /* font-size: 30px; */
+            color: black;
+            /* background: bk; */
+            border: 0px solid black;
+        }
+        
+        .lvl {
+            color: red;
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .lvl1 {
+            text-align: left;
+            color: blue;
+          
+        }
+        
+        .bonus {
+            color: green;
+           
+        }
+        
+        .lvl2 {
+            color: #2e31df;
+            
+        }
+        
+        .over {
+            font-family: fantasy;
+            font-size: 30px;
+            text-align: center;
+            color: rgba(14, 15, 15, 0.5);
+        }
+        
+        .bg1 {
+            background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, rgb(0, 255, 0), blue, #FF3706);
+            text-align: center;
+            background-repeat: no-repeat;
+            background-size: 600% 100%;
+            animation: gradient 3s linear infinite;
+        }
+        
+        @keyframes gradient {
+            0% {
+                background-position: 0%
+            }
+            100% {
+                background-position: 100%
+            }
+        }
+        
+        .start {
+            text-align: center;
+            position: absolute;
+            /* background-size: cover; */
+            font-size: 40px;
+           
+            color: lime;
+            background: #000000;
+            /* visibility: hidden; */
+            border: 10px solid black;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 10px 10px 30px #000000;
+        }
+        
+        .end {
+            /* position: fixed; */
+            visibility: hidden;
+        }
+        
+        .ovr {
+            text-align: center;
+            align-items: center;
+        }
+        
+        .up1 {
+            font-size: 50px;
+            position: relative;
+            /* left: 100px; */
+            width: 100px;
+            background: lime;
+        }
+        
+        .down1 {
+            position: relative;
+            font-size: 50px;
+            /* left: 110px; */
+            width: 100px;
+            background: lime;
+        }
+        
+        * {
+            margin: 0;
+            overflow: hidden;
+            /* color: */
+        }
