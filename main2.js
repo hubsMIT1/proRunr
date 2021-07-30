@@ -17,7 +17,8 @@
         h1 = window.innerHeight;
 
 
-
+        var highlevel = localStorage.getItem("lvl");
+        var highscore = localStorage.getItem("score");
 
 
 
@@ -371,7 +372,7 @@
 
                     } else {
 
-                        Lavels.text = "LEVEL : " + level + " up  & " + (level * 2) + " BONUS POINTS";
+                        Lavels.text = "LEVEL : " + level + " Up & " + (level * 2) + " BONUS POINTS";
                         Lavels.update();
                     }
 
@@ -464,14 +465,13 @@
                 // console.log(scr)
 
 
-                var highlevel = localStorage.getItem("level");
-                var highscore = localStorage.getItem("score");
+              
 
                 if (level > highlevel) {
                     highlevel = level;
 
                 }
-                localStorage.setItem("level", highlevel);
+                localStorage.setItem("lvl", highlevel);
 
                 level1.innerHTML = "Level : " + level;
                 level2.innerHTML = "Max Level : " + highlevel;
@@ -481,12 +481,12 @@
 
                 if (scr + (level * 2) > highscore) {
 
-                    highscore = scr;
+                    highscore = scr+(level*2);
                 }
-
+                var sk = ParseInt(scr + (level * 2));
                 localStorage.setItem("score", highscore);
 
-                score1.innerHTML = "Your Score : " + scr + (level * 2);
+                score1.innerHTML = "Your Score : " + sk;
                 document.querySelector('.highS').innerHTML = " Best Score : " + highscore;
                 // console.log(scr)
                 // holes.update();
