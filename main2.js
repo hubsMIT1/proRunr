@@ -518,7 +518,7 @@
                 hy1 = [0, hy / 7, hy / 5, hy / 6, hy / 8, 2 * (hy / 3), 2 * (hy / 3), 2 * (hy / 3), 2 * (hy / 3)]
                 n1 = Math.floor(Math.random() * 9);
                 if (n1 == 7 || n1 == 5 || n1 == 6 || n1 == 8) {
-                    h2 = (Math.floor(Math.random() * (hy / 3) - 100) + 100)
+                    h2 = (Math.floor(Math.random() * ((hy / 3) - 100)) + 100)
                 } else {
                     h2 = (hy / 3) - hy1[n1];
                 }
@@ -630,7 +630,7 @@
 
 
         }
- window.addEventListener(() => {
+ window.addEventListener('resize',() => {
                 can.width = w1;
                 can.height = h1 - 100;
             })
