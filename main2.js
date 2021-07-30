@@ -483,7 +483,7 @@
 
                     highscore = scr+(level*2);
                 }
-                var sk = ParseInt(scr + (level * 2));
+                var sk = (scr + (level * 2));
                 localStorage.setItem("score", highscore);
 
                 score1.innerHTML = "Your Score : " + sk;
