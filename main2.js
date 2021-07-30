@@ -3,6 +3,7 @@
         var body = document.querySelector('body');
 
         var highscore = 0;
+      
         var highlevel = 0;
 
         // var audio1 = new Audio('/proRunr/audio1.wav')
@@ -17,8 +18,8 @@
         h1 = window.innerHeight;
 
 
-        var highlevel = localStorage.getItem("lvl");
         var highscore = localStorage.getItem("score");
+        var highlevel = localStorage.getItem("lvl");
 
 
 
