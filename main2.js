@@ -86,7 +86,7 @@
             var mus = setInterval(() => {
 
                 ad2.play();
-            }, 1000)
+            }, 10)
             bd.classList.remove('bg1')
             up1.style.top = ((h1 - 100) / 3) * 3
             down1.style.top = ((h1 - 100) / 3) * 3
