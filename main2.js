@@ -444,7 +444,7 @@
                 if (scr % 10 == 0 && scr > 0) {
                     // lvlup.play();
 
-                    lvls.push(new Lavels(w1 / 4, (h1 - 100) / 4, "lime", w1 / 15, "text"))
+                    lvls.push(new Lavels(w1 / 4, (h1 - 100) / 4, "lime", w1 / 25, "text"))
 
                     level = scr / 10;
 
