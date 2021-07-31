@@ -304,7 +304,7 @@
                 draw() {
                     c.save();
                     c.globalAlpha = this.alpha;
-                    c.font = '30px serif'
+                    c.font = '20px serif'
                     c.font = this.width + " " + this.height;
                     c.fillStyle = this.color;
                     c.fillText(this.text, this.x, this.y);
